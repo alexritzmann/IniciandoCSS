@@ -1,0 +1,62 @@
+*/*regra CSS universal - para todos elementos*/
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p
+{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+div
+{
+    height: 200px;
+    color: brown;
+}
+
+a
+{
+    color: red;
+}
+
+#paragrafo1 /*regra CSS para id*/
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: aquamarine;
+}
+
+.negrito /*regra CSS para class*/
+{
+    font-weight: bold;
+}
+
+/*PARTE 2*/
+
+p+a /*regra CSS para inserir atributos (irmão adjacente)*/
+/*primeiro a depois do p receberá essa regra*/
+{
+    font-size: large;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+p~h3/*regra CSS para inserir atributos (irmão)*/
+/*todos elementos h3 depois de p receberá essa regra*/
+{
+    color: yellow;
+    font-weight: lighter;
+}
+
+h3>a/*regra CSS para inserir atributos (filho)*/
+/*todos elementos diretos dentro de p receberá essa regra*/
+{
+    color:green;
+}
+
+div  a /*regra CSS para inserir atributos ( ) "ESPAÇO EM BRANCO"*/
+/*Aplica atributos em a que estão dentro da div independente se é filho, neto, etc..*/
+{
+    color:grey;
+}

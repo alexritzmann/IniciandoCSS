@@ -1,0 +1,78 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.header1
+{
+    border: 1px solid black;
+    margin: 5px;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgb(216, 219, 216);
+    height: 50px;
+    align-content: center;
+}
+
+.header2
+{
+    border: 1px solid black;
+    margin: 5px;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgb(216, 219, 216);
+    align-content: center;
+    height: 30px;
+}
+
+.colunaEsquerda
+{
+    border: 1px solid black;
+    margin: 5px;
+    
+    background-color: rgb(216, 219, 216);
+    align-content: center;
+}
+
+.conteudo
+{
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(216, 219, 216);
+    align-content: center;
+    height: 200px;
+}
+
+.colunaDireita
+{
+    border: 1px solid black;
+    margin: 5px;
+    background-color: rgb(216, 219, 216);
+    align-content: center;
+    
+}
+
+.rodape
+{
+    border: 1px solid black;
+    margin: 5px;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgb(216, 219, 216);
+    align-content: center;
+    height: 30px;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /*usando as frações, usa-se a proporção do tomanho total do espaço disponível*/
+    grid-gap: 10px; /*espaçamento entre os box*/
+    border: 1px solid black;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+

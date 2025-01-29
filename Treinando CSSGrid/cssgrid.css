@@ -1,0 +1,147 @@
+/*FLOAT
+-right
+-left
+-none
+-inherit
+*/
+
+/*CLEAR - irmã do FLOAT
+-both
+-right
+-left
+-none
+*/
+
+body
+{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conteudo
+{
+
+}
+
+.imagemflutuante
+{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.texto
+{
+
+}
+
+.subtitulo
+{
+    clear: both;
+}
+
+
+/*POSITION
+-absolute
+-relative
+-fixed
+-static
+-sticky
+*/
+
+
+.sticky /*gruda na tela na posição indicada*/
+{
+    background-color: yellow;
+    position: sticky;
+    position: -webkit-sticky; /*adicionar por conta dos diversos navegadores*/
+    top: 50px;
+    border: solid black;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.relativo
+{
+    background-color: blue;
+    position: relative;
+    position: -webkit-relative;
+    height: 100px;
+
+}
+
+.absoluto
+{
+    background-color: red;
+    position: absolute;
+    position: -webkit-absolute;
+    height: 50px;
+    bottom: 0px;
+    right: 20px;
+    width: 35px;
+}
+
+.fixo /*sempre visivel mesmo com relagem da tela*/
+{
+    background-color: green;
+    position: fixed;
+    position: -webkit-fixed;
+    height: 50px;
+    width: 35px;
+    bottom: 0px;
+    right: 20px;
+    
+}
+
+
+/*PROPRIEDADS DISPLAY
+-repeat
+-fr (frações)
+-grid-template-areas
+-grid-template-columns
+-grid-template-rows
+*/
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /*usando as frações, usa-se a proporção do tomanho total do espaço disponível*/
+    grid-gap: 10px; /*espaçamento entre os box*/
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+.item
+{
+    background-color: aqua;
+    border: 1px;
+    padding: 10px;
+}
+
+.header1
+{
+    background-color: black;
+    padding: 20px;
+    grid-column: 1/-1;
+}
+
+.sidebar
+{
+    background-color:blue;
+    padding: 20px;
+}
+
+.content
+{
+    background-color:aqua;
+    padding: 20px;
+}
+
+.container2
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: auto 1fr;
+
+}
