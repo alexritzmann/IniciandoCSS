@@ -1,0 +1,63 @@
+.container
+{
+    display: flex;
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    height: 200px;
+    width: 860px;
+/*   flex-direction: row; /*da esquerda pra direita*/
+    flex-direction: row-reverse; /*da direita pra esquerda*/
+/*   flex-direction: column; /*da cima pra baixo*/
+/*   flex-direction: column-reverse; /*da baixo pra cima*/
+/*    justify-content: flex-start; /*Valor padrão*/
+/*    justify-content: flex-end; /*alinhado a direita*/
+/*    justify-content: center; /*alinhado ao centro*/
+/*    justify-content: space-between; /*alinhado com espaço entre eles inciando no canto*/
+/*    justify-content: space-around; /*alinhado com espaço ao redor*/
+    justify-content: space-evenly; /*alinhado com espaço entre eles "equilibrado"*/
+/*    align-items: flex-start; /* PADRÃO - alinhado ao topo*/
+/*    align-items: flex-end; /*alinhado ao fundo*/
+/*    align-items: center; /*alinhado ao centro*/
+    align-items: stretch; /*alinhado ao topo e ao fundo*/
+    flex-wrap: wrap; /*quebra as linhas*/
+    align-content: space-around; 
+    gap: 5px; /*espaçamento entre os itens (coluna e linha)*/
+/*    column-gap: 20px;/*espaçamento entre as colunas*/
+/*   row-gap: 10px; /*espaçamento entre as linhas*/
+
+
+
+
+}
+
+.box
+{
+    background-color: blue;
+   /* margin: 10px;*/
+    padding: 10px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#box1
+{
+    background-color: green;
+    height: 20px;
+    flex-grow: 1;
+}
+
+#box2
+{
+    background-color: red;
+    height: 50px;
+    flex-grow: 3;
+}
+
+#box3
+{
+    background-color: yellow;
+    height: 30px;
+    flex-grow: 1;
+}
