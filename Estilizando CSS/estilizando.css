@@ -1,0 +1,43 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1;
+
+}
+
+header
+{
+    background-color: rgb(177, 175, 175);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+    /* auto-fit vai ajustar conforme o tamanho da tela*/
+    gap: 20px;
+    /*define o tamanho do espaçamento entre os itens do grid*/
+    padding: 20px;
+}
+
+.content
+{
+    background-color: rgb(178, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer
+{
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
